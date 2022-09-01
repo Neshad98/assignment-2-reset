@@ -13,7 +13,7 @@ body {
 .top-section {
     width: 80%;
     margin: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     border-radius: 20px;
     background-color: rgba(7, 7, 7, 0.815);
     display: flex;
@@ -28,7 +28,7 @@ body {
 .half-width {
 
     width: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 
 }
@@ -48,7 +48,11 @@ body {
 
 .button {
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    background-color: red;
+    border: 0;
+    color: white;
+    border-radius: 5px;
 
 }
 
@@ -56,7 +60,7 @@ body {
 .middle-section {
     width: 80%;
     margin: auto;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
 
 
@@ -65,17 +69,40 @@ body {
 .sidebar {
 
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    border: 2px solid yellow;
+
+    /* border: 2px solid yellow; */
 
 
 
-    height: 375px;
+    height: 400px;
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: rgba(7, 7, 7, 0.815);
 
 
+}
+
+.btn-sm {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+#blog-btn {
+    background-color: red;
+    color: white;
+}
+
+.sidebar button {
+    font-size: 20px;
 }
 
 aside {
@@ -94,6 +121,7 @@ aside {
     grid-gap: 30px;
     align-items: center;
     justify-content: center;
+
 }
 
 .blog {
@@ -112,5 +140,29 @@ aside {
 }
 
 .blog-description {
-    padding: 20px;
+    padding: 10px;
+}
+
+.blog-description img {
+    position: relative;
+    top: 5px;
+}
+
+.icons {
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------media query----------------------- */
+/* tablet style */
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .top-section {
+        width: 80%;
+        background-color: red;
+
+
+
+    }
+
 }
